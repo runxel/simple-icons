@@ -1846,6 +1846,11 @@
             "source": "https://assistant.google.com/"
         },
         {
+            "title": "Google Cardboard",
+            "hex": "FF7143",
+            "source": "https://arvr.google.com/cardboard/"
+        },
+        {
             "title": "Google Cast",
             "hex": "1BB6F6",
             "source": "https://partnermarketinghub.withgoogle.com/#/brands"
@@ -2129,6 +2134,11 @@
             "title": "Hootsuite",
             "hex": "000000",
             "source": "https://hootsuite.com/en-gb/about/media-kit"
+        },
+        {
+            "title": "Houdini",
+            "hex": "FF4713",
+            "source": "https://www.sidefx.com/products/houdini/"
         },
         {
             "title": "Houzz",
@@ -2459,6 +2469,11 @@
             "title": "Kaspersky",
             "hex": "009982",
             "source": "https://www.kaspersky.com"
+        },
+        {
+            "title": "Katana",
+            "hex": "000000",
+            "source": "https://www.foundry.com/products/katana"
         },
         {
             "title": "KeePassXC",
