@@ -1,30 +1,27 @@
 {
-  extends: [
-    "config:base",
+	repositories: ['simple-icons/simple-icons'],
+	extends: [
+		'config:recommended',
 
-    // Make sure we get a single PR combining all updates
-    "group:all",
-  ],
+		// Make sure we get a single PR combining all updates
+		'group:all',
+	],
 
-  lockFileMaintenance: {
-    extends: [
-      // Make sure we get a single PR combining all updates
-      "group:all",
-    ],
+	// Disable Dependency Dashboard
+	dependencyDashboard: false,
 
-    // Explicitly enable lockfile maintenance
-    enabled: true,
+	// Use our labelling system
+	labels: ['dependencies'],
 
-    // This schedule should be the same as the general schedule!
-    schedule: "on the 2nd and 4th day instance on sunday after 11pm",
-  },
+	// We generally always want the major version
+	separateMajorMinor: false,
 
-  // Use our labelling system
-  labels: ["dependencies"],
+	// We manually update digest dependencies (eg. hashes in GitHub Actions)
+	digest: {enabled: false},
 
-  // Schedule the PRs to interleave with our release schedule
-  schedule: "on the 2nd and 4th day instance on sunday after 11pm",
+	// PR title and commit message when updating dependencies
+	commitMessage: 'Update dependencies',
 
-  // We generally always want the major version
-  separateMajorMinor: false,
+	// Simplify PR body when updating dependencies
+	prBodyTemplate: '{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}',
 }
